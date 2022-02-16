@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* MEDIA QUERY */
+body {
+    background-color: #242323;
+}
+  
+@media screen and (max-width: 900px) {
+    div.grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr;
+
+        width: 100%;
+    }
+    h2.h2, h2.h2-pt3, p.parrafo, ul.parrafo {
+        font-size: 19px;
+        text-align: center;
+        margin: 20px;
+
+        width: 100%;
+    }
+    
+    .img-1, .img-2, .img-3 {
+        width: 100%;
+        max-width:400px;
+        max-height: 300px;
+    }
+
+    img.images {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+} 
+
+/* FIN MEDIA QUERY */
+
+
+/* GRID */
+.grid-container {
+    display: grid;
+
+ /* *repeat (2 (veces), 2fr) 1fr para abreviar* */ 
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+
+    /* border: 2px solid white; */
+}
+
+.grid-div {
+    text-align: center; 
+    padding: 55px 0px ;
+    margin: 50px 0px; 
+}
+
+.div2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* .grid-div2 {
+    padding: 0px 55px 55px 55px;
+}  */
+
+.grid-container-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    text-align: center;
+
+}  
+
+.grid-div-two {
+    text-align: center; 
+    padding: 55px 0px ;
+    margin: 50px 0px; 
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.grid-container-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.grid-container-four {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    margin: 20px;
+    padding: 100px;
+}
+/* FIN GRID */
+
+
+/* P/IMG/H2 */
+.h2 {
+    font-size: 35px;
+    margin: 50px;
+}
+
+.h2-pt3 {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+
+/* .img-container {
+    position: relative;
+    text-align: center;
+    color: black;
+} 
+
+.p-centered {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.p-centered-two {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.p-centered-three {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+} */
+
+.img-1, .img-2, .img-3 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-1, .img-2 {
+    width: 472px;
+    height: 415px;
+    display: flex;
+    justify-content: center;
+}
+
+/* FIN P/IMG/H2 */
+
+
+/* COLOR */
+h2, h3, h4, p, li, form {
+    color: white;
+}
+/* FIN COLOR */
+
+
+/* SECCIONES */
+/* .parte-uno, .parte-dos, .parte-tres, .parte-cuatro, .parte-cinco, .parte-seis, .parte-siete {
+    margin: 40px 40px;
+    margin-bottom: 200px;
+    margin-top: 0;
+    padding-left: 100px;
+    padding-right: 100px; 
+} */
+
+.li-styles {
+    padding: 11px 0px;
+} 
+
+.parrafo {
+    font-size: 19px;   
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.grid-div {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/* FIN SECCIONES */
+
+/* CRISTALES */
+.pt1-cristal {
+    margin-top: 61px;
+}
+
+.pt2-cristal {
+    margin-top: 38px;
+}
+
+.pt3-cristal {
+    margin-top: 81px;
+}
+
+.text-cristal {
+    margin: 70px;
+}
+
+.text2-cristal {
+    margin: 30px;
+}
+
+.title-cristal {
+    margin-top: 20px;
+}
+/* FIN CRISTALES */
+
+/* COLECCION */
+/* FIN COLECCION */
+
+/* NAV */
+
+a.transitions {
+    color: gold;
+    transition: color 1s linear;
+}
+
+a.transitions:hover {
+    color: orange;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.li-nav {
+    display: inline; 
+    padding: 20px;
+    margin: 10px; 
+}
+
+.li-nav :link {
+    color: gold;
+}
+
+.li-nav :visited {
+    color: rgb(219, 206, 24);
+}
+
+.li-nav :hover {
+    color: rgb(173, 187, 51);
+}
+
+
+.nav-logo-container, .nav {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+} 
+
+.nav {
+    margin: -10px;
+    font-size: 19px;
+}
+
+.nav-logo {
+    color: gold;
+    margin: 10px;
+}
+/* FIN NAV */
+
+
+/* FOOTER */
+.footer-p {
+    text-align: center;
+    margin: 40px;
+}
+/* FIN FOOTER */
