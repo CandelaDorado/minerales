@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristales</title>
 
-    <!-- CSS -->
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- aca no me deja linkear el CSS por eso me aparece la pagina sin estilos-->
+    <!-- CSS -->
     <link rel="stylesheet" href="../style.css">
 
     <!-- FONT FAMILY -->
@@ -20,30 +21,54 @@
 <body>
 <!-- CABECERA -->
 <header>
-    <div class="nav-logo-container">
-    <a href="../index.html" class="nav-logo transitions">
-        <!-- logo -->
-        <h1>Los Cristales</h1>
-    </a>
-    
-    <nav class="nav">
-        <ul class="li-nav">
-            <li class="li-nav"><a href="../index.html">Inicio</a></li>
-            <li class="li-nav"><a href="minerales.html">Minerales</a></li>
-            <li class="li-nav"><a href="cristales.html">Cristales</a></li>
-            <li class="li-nav"><a href="coleccion.html">Colección</a></li>
-            <li class="li-nav"><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-color nav">
+        <div class="container-fluid">
+          <a class="navbar-brand nav-logo transitions" href="../index.html">Los Minerales</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav navbar-left bg-color-nav">
+
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Minerales
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../minerales/oro.html">Oro</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="cristales.html">Cristales</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="coleccion.html">Colección</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="contacto.html">Contacto</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
 </header>
 <!-- FIN CABECERA --> 
 
 <!-- CRISTALES PAGE -->
 <!-- parte 1 -->
-<div class="grid-container">
-
-    <div class="grid-div">
+<section class="container">
+  <div class="row">
+    <div class="grid-div col">
        <h2 class="h2">
            ¿Qué es un cristal?
        </h2>
@@ -56,18 +81,21 @@
        </p>
      </div>
 
-    <div class="img-1">
+    <div class="img-1 col-lg-8 col-md-12 col-sm-12">
     <img src="/src/image/klipartz.png" alt="">
     </div>
-
+  </div>
+</section>
 <!-- fin parte 1 -->
 
 <!-- parte 2 -->
-    <div class="img-2">
+<section class="container">
+  <div class="row">
+    <div class="img-2 col-lg-8 col-md-12 col-sm-12">
     <img src="/src/image/cristalej.png" alt="">
     </div>
 
-    <div class="grid-div">
+    <div class="grid-div col">
     <h2 class="h2">
         Un mundo simétrico y de hábitos
     </h2>
@@ -76,10 +104,14 @@
         Los cristales de los minerales son simétricos porque obedecen un patrón geométrico que se repite en todas las piedras de la misma clase. Por este motivo los científicos clasifican los cristales conforme a siente sistemas cristalinos, según la simetría de sus caras, Así, existe el sistema cúbico, tretagonal, monoclínico, herxagonal, romboédrico, rómbico y triclínico. También es frecuente ordenar los cristales según el ''hábito cristalino'', que hace referencia a su forma externa y es lo primero que nos llama la atención al contemplarnos. Esta clasificación puede centrarse en sus caras (prismático, piramidal y pinacoidal), en su forma cristalina (cúbico, dodecaédrico y romboédrico) y en elementos descriptivos (como el laminado).
     </p>
     </div>
+  </div>
+</section>
 <!-- fin parte 2 -->
 
 <!-- parte 3 -->
-    <div class="grid-div">
+<section class="container">
+  <div class="row">
+    <div class="grid-div col">
       <h2 class="h2-pt3">
           Viaje al interior de los cristales
       </h2>
@@ -88,21 +120,21 @@
       <p class="parrafo">
           Los cristales están formados por estructuras individuales e idénticas en átomos: son las llamadas ‘’celdas unitarias’’. Todas ellas están construidas siguiendo el mismo patrón tridimensional que les da su volumen característico (como si fueran ladrillos de un edificio). Se repiten tanto en piedras gigantescas como en hallazgos microscópicos. La forma de esas celdas unitarias y su simetría interna es lo que determina las formas de sus caras y por tanto su clasificación
       </p>
-    </div>
     
-     <div class="grid-div">
          <h3>
              ¿Sabías que..?
          </h3>
 
-         <div>
              <p class="parrafo">
                 Los cristales gemelos (también conocidos como maclas) surgen cuando dos o más cristales idénticos se agrupan de manera simétrica. Este fenómeno natural puede formarse de dos maneras distintas. La primera es por penetración, cuando cristales individuales se disponen en forma de ángulo o en paralelo. La segunda es por contacto, cuando los elementos se unen en una misma superficie.
              </p>
-         </div>
      </div>
 
-</div>
+     <div class="col">
+         <img src="" alt="">
+     </div>
+  </div>
+</section>
 
 <section>
     <div>
@@ -151,5 +183,9 @@
     </div>
 </footer>
 <!-- FIN FOOTER -->
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
