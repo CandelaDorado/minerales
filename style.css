@@ -43,9 +43,29 @@ body {
         height: auto;
     }
 
-} 
+    .img-3 {
+        margin-bottom: 100px;
+    }
 
+} 
 /* FIN MEDIA QUERY */
+
+
+/* BOOTSTRAP */
+.bg-color {
+    background-color: #221f1f;
+}
+
+.bg-color-nav {
+    background-color: #221f1f;
+}
+
+.navbar-nav.navbar-left {
+    position: absolute;
+    left: 85%;
+    transform: translatex(-50%);
+}
+/* FIN BOOTSTRAP */
 
 
 /* GRID */
@@ -118,50 +138,31 @@ body {
     margin-bottom: 50px;
 }
 
-
-/* .img-container {
-    position: relative;
-    text-align: center;
-    color: black;
-} 
-
-.p-centered {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-}
-
-.p-centered-two {
-    position: absolute;
-    top: 57%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-}
-
-.p-centered-three {
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-} */
-
-.img-1, .img-2, .img-3 {
+.img-2 {
     margin-top: 100px;
-    display: flex;
-    justify-content: center;
-}
-
-.img-1, .img-2 {
-    width: 472px;
+    width: 480px;
     height: 415px;
     display: flex;
     justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.img-1, .img-3 {
+    margin-top: 100px;
+    width: 400px;
+    height: 415px;
+    display: flex;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-1:hover {
+    transform: scale(1.1);
+}
 /* FIN P/IMG/H2 */
 
 
@@ -173,14 +174,6 @@ h2, h3, h4, p, li, form {
 
 
 /* SECCIONES */
-/* .parte-uno, .parte-dos, .parte-tres, .parte-cuatro, .parte-cinco, .parte-seis, .parte-siete {
-    margin: 40px 40px;
-    margin-bottom: 200px;
-    margin-top: 0;
-    padding-left: 100px;
-    padding-right: 100px; 
-} */
-
 .li-styles {
     padding: 11px 0px;
 } 
@@ -196,6 +189,7 @@ h2, h3, h4, p, li, form {
     margin-right: 50px;
 }
 /* FIN SECCIONES */
+
 
 /* CRISTALES */
 .pt1-cristal {
@@ -223,17 +217,19 @@ h2, h3, h4, p, li, form {
 }
 /* FIN CRISTALES */
 
+
 /* COLECCION */
 /* FIN COLECCION */
 
+
 /* NAV */
 
-a.transitions {
+.transitions {
     color: gold;
     transition: color 1s linear;
 }
 
-a.transitions:hover {
+.transitions:hover {
     color: orange;
 }
 
@@ -245,18 +241,18 @@ a {
     text-decoration: none;
 }
 
-.li-nav {
+/* .li-nav {
     display: inline; 
     padding: 20px;
     margin: 10px; 
-}
+} */
 
 .li-nav :link {
     color: gold;
 }
 
 .li-nav :visited {
-    color: rgb(65, 60, 14);
+    color: rgb(163, 149, 22);
 }
 
 .li-nav :hover {
